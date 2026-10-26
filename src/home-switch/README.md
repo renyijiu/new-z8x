@@ -22,4 +22,4 @@ JDK 17、Android SDK 34、Gradle 8.9、Android Gradle Plugin 8.5.2。
 设置 JAVA_HOME、ANDROID_HOME 后执行 `./gradlew lintRelease assembleRelease`。
 执行 `python3 tests/run_tests.py` 进行本机 shell/JVM 模拟检查。测试需要 POSIX 系统、Python 3 和 JDK 17。
 
-发布包使用本任务既有签名。源码不含签名私钥；自行构建的默认调试签名不能覆盖已发布包。
+发布包使用仓库记录的发布签名。源码不含签名私钥；自行构建的默认调试签名不能覆盖已发布包。

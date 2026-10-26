@@ -12,4 +12,17 @@
 *.keystore
 *.pem
 *.key
+# Local environment files and common credential exports
+.env
+.env.*
+!.env.example
+!.env.sample
+*.p12
+*.pfx
+adbkey
+adbkey.pub
+session-key
+session-key.pub
+id_rsa
+id_ed25519
 .DS_Store

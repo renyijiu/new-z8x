@@ -1,7 +1,18 @@
 """One bounded diagnostic receiver. No command/control endpoint."""
-import json,hmac,time,argparse,os
+import json,hmac,time,argparse,os,tempfile
 from pathlib import Path
 from http.server import HTTPServer,BaseHTTPRequestHandler
+
+def save_report(path,data):
+ """Create private output before writing; atomically replace only after success."""
+ p=Path(path)
+ fd,name=tempfile.mkstemp(prefix='.'+p.name+'-',suffix='.tmp',dir=p.parent)
+ try:
+  with os.fdopen(fd,'w',encoding='utf-8') as output:
+   json.dump(data,output,ensure_ascii=False,indent=2)
+  os.replace(name,p)
+ finally:
+  Path(name).unlink(missing_ok=True)
 
 def run(path,duration=3600):
  config=json.loads(Path(path).read_text());state={'done':False}
@@ -23,7 +34,7 @@ def run(path,duration=3600):
     if len(raw)!=size:raise ValueError()
     data=json.loads(raw)
     if not isinstance(data,dict) or not isinstance(data.get('run_id'),str):raise ValueError()
-    p=Path(config['result_path']);tmp=p.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2));tmp.chmod(0o600);os.replace(tmp,p)
+    save_report(config['result_path'],data)
    except (ValueError,OSError):self.send_error(400);return
    self.reply()
    if data.get('run_id') in config.get('ignore_run_ids',[]):

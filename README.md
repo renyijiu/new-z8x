@@ -41,9 +41,9 @@
 
 ## 仓库内容与分享
 
-`src/launcher`、`src/home-switch` 是对应最终版本源码；`tools/samba` 是临时 Samba 容器配置；`verification/release.json` 记录校验值和验证边界。日常推荐为这两个 APK；历史包放在 testing。公开内容不含实际会话维护 APK、厂商 APK、个人 IP、密码、接收回执 token 或签名私钥。
+`src/launcher`、`src/home-switch` 是对应最终版本源码；`tools/samba` 是临时 Samba 容器配置；`verification/release.json` 记录校验值和验证边界。日常推荐为这两个 APK；历史包放在 testing。实际会话维护 APK、厂商 APK、个人设备 IP、密码、接收回执 token 和签名私钥不属于分发内容。最近一次隐私检查及范围见 [开源资料检查](verification/open-source-review.md)。
 
-项目地址：[ymbian/new-z8x](https://github.com/ymbian/new-z8x)。分享仓库或使用 `git archive` 导出已提交内容；不要直接压缩带 `.local` 的工作目录。代码及文档采用 [MIT](LICENSE)，第三方字体、依赖和图片另按其各自许可，见 [来源与许可](THIRD_PARTY_NOTICES.md)。本项目由社区维护，与极米官方及上游官方发行版无关联。
+项目地址：[renyijiu/new-z8x](https://github.com/renyijiu/new-z8x)。分享仓库或使用 `git archive` 导出已提交内容；不要直接压缩带 `.local` 的工作目录。代码及文档采用 [MIT](LICENSE)，第三方字体、依赖和图片另按其各自许可，见 [来源与许可](THIRD_PARTY_NOTICES.md)。本项目由社区维护，与极米官方及上游官方发行版无关联。
 
 目录分工：
 
