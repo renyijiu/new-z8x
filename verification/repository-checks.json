@@ -1,4 +1,5 @@
 {
+  "record_scope": "Historical z8x7-era checks recorded on 2026-10-24; not a current repository inventory. See release.json for z8x13 validation and open-source-review.md for the latest privacy review.",
   "date": "2026-10-24",
   "source_builds": {
     "launcher": "passed",
@@ -11,8 +12,9 @@
   "markdown_local_links": "passed",
   "known_private_credentials_and_personal_paths_scan": "passed",
   "tracked_apk_count": 2,
-  "excluded": "private keys, local SDK paths, Samba passwords, receiver configuration, build output",
+  "excluded": "private keys, local SDK paths, Samba passwords, generated receiver configuration, build output; the placeholder receiver template is tracked",
   "new_samba_wrapper": "syntax and mocked ownership/failure tests; no additional live port-445 service started",
   "z8x7_source_build": "passed",
-  "z8x7_unit_failures": 0
+  "z8x7_unit_failures": 0,
+  "tracked_apk_count_scope": "Two recommended APKs at the time of this record; excludes historical testing packages."
 }

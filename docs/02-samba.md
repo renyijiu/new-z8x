@@ -34,7 +34,7 @@ python3 tools/samba_share.py start
 | 密码 | start 命令显示的随机密码，区分大小写 |
 | 共享目录 | ProjectorTransfer（有的界面连接后再选择） |
 
-进入后安装 `02-clean-home-z8x6.apk`、`15-z8x-home-switch-v1.apk`。安装步骤见下一篇。
+进入后安装 `02-clean-home-z8x13.apk`、`15-z8x-home-switch-v1.apk`。安装步骤见下一篇。
 
 ## 结束共享
 
