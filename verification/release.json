@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-24",
+  "packages": [
+    {
+      "file": "02-clean-home-z8x13.apk",
+      "kind": "launcher",
+      "version": "2.6-z8x13",
+      "version_code": 20,
+      "package": "com.gathin.tvhome",
+      "bytes": 443179,
+      "sha256": "dbfed66f66c2dd462dbdda8496f2806b4594981067651fd07b8ca192836e5b34"
+    },
+    {
+      "file": "15-z8x-home-switch-v1.apk",
+      "kind": "home-switch",
+      "version": "1.0",
+      "version_code": 1,
+      "package": "local.projector.homeswitch",
+      "bytes": 26312,
+      "sha256": "1f25ac1ccd6c29e99af38af82451d673545999b8e215fa1f5abe0abccadade95"
+    }
+  ],
+  "signing_certificate_sha256": "51b01b97f95948d308eee6e8aaa187430e677cfff2a1153f55f4a88b18e80817",
+  "upstream": {
+    "url": "https://github.com/Gathin23/cleanyourtv",
+    "commit": "3b3f688a3737914482145b0895480ca771ff4c9c"
+  },
+  "validation": {
+    "launcher_unit_tests": 221,
+    "launcher_failures": 0,
+    "switch_shell_mock_cases": 14,
+    "switch_policy_cases": 16,
+    "lint_errors_both": 0,
+    "switch_lint_warnings": 5,
+    "signed_apks_verified": true,
+    "samba_downloads_verified": true,
+    "prior_temporary_root_on_device": true,
+    "prior_system_home_readback_and_physical_home": true,
+    "settings_sidebar_and_back_user_confirmed": true,
+    "z8x6_stock_home_entry_after_reboot_user_confirmed": true,
+    "standalone_switch_repeated_and_interrupted_on_device": "not explicitly confirmed",
+    "default_home_persistence_after_reboot": "no separate system readback recorded",
+    "z8x7_app_task_return_device_test": "failed: user reports apps still exit to original XGIMI home",
+    "z8x7_wallpaper_device_test": "user reports wallpaper appears corrected",
+    "z8x7_live_feed_fallback_download": "passed; 1920x1080; selected image date 2026-10-22 when newest was unavailable and cached image was 2026-10-23",
+    "z8x13_boot_user_confirmed": "User reports appears working after full power cycle",
+    "readonly_whitelist_app_exit_user_confirmed": true,
+    "readonly_policy_system_uid_write_test": "EACCES; uid/gid1000 non-truncating open",
+    "long_term_cloud_update_and_firmware_upgrade": "not verified",
+    "maintenance_generated_build": "passed: fresh session generated with documentation-only IPv4 addresses; lintRelease and assembleRelease succeeded"
+  }
+}

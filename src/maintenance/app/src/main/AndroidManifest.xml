@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <queries>
+        <package android:name="com.xgimi.home" />
+        <package android:name="com.gathin.tvhome" />
+        <intent><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.HOME" /></intent>
+    </queries>
+    <application android:label="极米返回路径诊断" android:icon="@drawable/icon"
+        android:banner="@drawable/banner" android:allowBackup="false" android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true" android:theme="@android:style/Theme.Material.NoActionBar">
+        <service android:name=".SwitchService" android:exported="false" android:foregroundServiceType="shortService" />
+        <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AdbCloseReceiver" android:exported="true" android:permission="android.permission.DUMP" />
+    </application>
+</manifest>

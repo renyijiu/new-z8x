@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-24",
+  "source_builds": {
+    "launcher": "passed",
+    "home-switch": "passed"
+  },
+  "launcher_unit_tests": 214,
+  "switch_mock_scenario_groups": 14,
+  "switch_policy_checks": 16,
+  "helper_tests": 6,
+  "markdown_local_links": "passed",
+  "known_private_credentials_and_personal_paths_scan": "passed",
+  "tracked_apk_count": 2,
+  "excluded": "private keys, local SDK paths, Samba passwords, receiver configuration, build output",
+  "new_samba_wrapper": "syntax and mocked ownership/failure tests; no additional live port-445 service started",
+  "z8x7_source_build": "passed",
+  "z8x7_unit_failures": 0
+}

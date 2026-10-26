@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Use the projector's regular system family throughout, avoiding light Latin text beside CJK fallback. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ReferenceType">
+    <string name="font_body" translatable="false">sans-serif</string>
+    <string name="font_regular" translatable="false">sans-serif</string>
+    <string name="font_light" translatable="false">sans-serif</string>
+    <string name="font_extralight" translatable="false">sans-serif</string>
+    <string name="font_medium" translatable="false">sans-serif</string>
+</resources>

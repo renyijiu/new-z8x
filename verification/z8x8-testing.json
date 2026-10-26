@@ -1,0 +1,50 @@
+{
+  "name": "02-clean-home-z8x8.apk",
+  "bytes": 441179,
+  "sha256": "9e7e1a3c193063a5f18565240ace46d6c9d612d652c2b621a8170b48d165bbfe",
+  "versionCode": 15,
+  "versionName": "2.6-z8x8",
+  "unit_tests": {
+    "tests": 217,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "Warning": 83,
+    "Information": 96
+  },
+  "lint_errors": 0,
+  "changed_files": [
+    "launcher/app/build.gradle",
+    "launcher/app/src/main/AndroidManifest.xml",
+    "launcher/app/src/main/java/com/gathin/tvhome/AppAdapter.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/AppLibraryDialog.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/Config.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/DailyWallpaper.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/DailyWallpaperPolicy.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/DockDecoration.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/HomeKeyService.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/LauncherSettingsActivity.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/MainActivity.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/ReturnGuard.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/ReturnGuardPolicy.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/ReturnGuardService.java",
+    "launcher/app/src/main/java/com/gathin/tvhome/SystemSettings.java",
+    "launcher/app/src/main/res/drawable/projector_wallpaper.xml",
+    "launcher/app/src/main/res/drawable/tile_bg.xml",
+    "launcher/app/src/main/res/layout/activity_launcher_settings.xml",
+    "launcher/app/src/main/res/layout/item_app.xml",
+    "launcher/app/src/main/res/values/config.xml",
+    "launcher/app/src/main/res/values/fonts.xml",
+    "launcher/app/src/main/res/values/strings.xml",
+    "launcher/app/src/main/res/values/styles.xml",
+    "launcher/app/src/main/res/values-zh-rCN/strings.xml",
+    "launcher/app/src/main/res/values-zh-rTW/strings.xml",
+    "launcher/app/src/main/res/xml/return_guard_service.xml",
+    "launcher/app/src/test/java/com/gathin/tvhome/DailyWallpaperPolicyTest.java",
+    "launcher/app/src/test/java/com/gathin/tvhome/ReturnGuardPolicyTest.java"
+  ],
+  "device_validation": "Installation and behavior pending"
+}

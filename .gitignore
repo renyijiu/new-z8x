@@ -1,0 +1,15 @@
+# Local credentials, logs and SDK/build output
+.local/
+**/local.properties
+**/.gradle/
+**/build/
+**/test-classes/
+**/shell-tests.json
+**/tests-result.txt
+**/__pycache__/
+*.pyc
+*.jks
+*.keystore
+*.pem
+*.key
+.DS_Store

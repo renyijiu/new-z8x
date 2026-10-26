@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'local.projector.returndiag'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'local.projector.returndiag'
+        minSdk 26
+        targetSdk 34
+        versionCode 14
+        versionName '1.13'
+    }
+    buildTypes { release { minifyEnabled false; signingConfig signingConfigs.debug } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}

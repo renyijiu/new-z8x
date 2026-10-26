@@ -1,0 +1,9 @@
+*.apk binary
+*.jar binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+gradlew text eol=lf
